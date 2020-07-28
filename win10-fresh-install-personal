@@ -1,29 +1,4 @@
 ##########
-# Tweaked Win10 Initial Setup Script
-# Primary Author: Disassembler <disassembler@dasm.cz>
-# Primary Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
-# Tweaked Source: https://gist.github.com/alirobe/7f3b34ad89a159e6daa1/
-#
-#    If you're a power user looking to tweak your machinea, or doing larger roll-out.. 
-#    Use the @Disassembler0 script instead. It'll probably be more up-to-date than mine:
-#    https://github.com/Disassembler0/Win10-Initial-Setup-Script
-# 
-#    Note from author: Never run scripts without reading them & understanding what they do.
-#
-#	Addition: One command to rule them all, One command to find it, and One command to Run it! 
-#
-#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJ8R4')"
-#
-#	Chris Titus Additions:
-#
-#	- Dark Mode
-#	- One Command to launch and run
-#	- Chocolatey Install
-#	- O&O Shutup10 CFG and Run
-#	- Added Install Programs
-#	- Added Debloat Microsoft Store Apps
-#
-##########
 # Default preset
 $tweaks = @(
 	### Require administrator privileges ###
@@ -31,8 +6,24 @@ $tweaks = @(
 
 	### External Program Setup
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
+	"InstalFirefox",
+	"InstalVLC",
+	"Instal7zip",
+	"InstalMalwarebytes",
+	"InstalCcleaner",
+	"Instal Sumatrapdf",
+	"InstalAtom",
+	"InstalBitwarden",
+	"InstalOBS",
+	"InstalSteam",
+	"InstalSignal",
+	"Instalwire",
+	"InstaliCue",
+	"Instalmsi",
 	### Windows Apps
 	"DebloatAll",
+	
+	
 
 	### Privacy Tweaks ###
 	"DisableTelemetry",             # "EnableTelemetry",
@@ -193,6 +184,62 @@ Function InstallTitusProgs {
 	Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe
 	./OOSU10.exe ooshutup10.cfg /quiet
+}
+Function InstalFirefox {
+	Write-Output "Installing Firefox browser"
+	choco install firefox --params "/NoTaskbarShortcut"
+}
+Function InstalMalwarebytes {
+	Write-Output "Installing Malware Bytes"
+	choco install malwarebytes"
+}
+Function Instal7zip {
+	Write-Output "Installing 7zip"
+	choco install 7zip.install
+}
+Function InstalVLC {
+	Write-Output "Installing VLC Player"
+	choco install vlc
+}
+Function InstalCcleaner {
+	Write-Output "Installing Ccleaner"
+	choco install ccleaner
+}
+Function Instal Sumatrapdf {
+	Write-Output "Installing Sumatra PDF reader"
+	choco install sumatrapdf.install
+}
+Function InstalAtom {
+	Write-Output "Installing Atom text editor"
+	choco install atom
+}
+Function InstalOBS {
+	Write-Output "Installing OBS Studio"
+	choco install obs-studio
+}
+Function InstalSteam {
+	Write-Output "Installing Steam"
+	choco install steam
+}
+Function InstalBitwarden {
+	Write-Output "Installing Bitwarden Password Manager"
+	choco install bitwarden
+}
+Function InstalSignal {
+	Write-Output "Installing Signal Messenger"
+	choco install signal
+}
+Function Instalwire {
+	Write-Output "Installing Wire"
+	choco install wire
+}
+Function InstaliCue {
+	Write-Output "Installing iCUE Corsair"
+	choco install cue
+}
+Function Instalmsi {
+	Write-Output "Installing MSI AfterBurner"
+	choco install msiafterburner
 }
 ##########
 # Privacy Tweaks
