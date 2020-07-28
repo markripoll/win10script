@@ -8,4 +8,4 @@ This is the Ultimate Windows 10 Script from a creation from multiple debloat scr
 
 ## To install, right click windows and open Powershell as admin and copy this command:
 
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJuLL')"
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJut4')"
