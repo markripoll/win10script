@@ -117,7 +117,6 @@ $tweaks = @(
 	# "SetVisualFXPerformance",     # "SetVisualFXAppearance",
 	# "AddENKeyboard",              # "RemoveENKeyboard",
 	"EnableNumlock",             	# "DisableNumlock",
-	"EnableDarkMode",				# "DisableDarkMode",
 	"Stop-EdgePDF",
 
 	### Explorer UI Tweaks ###
@@ -2430,20 +2429,6 @@ Function WaitForKey {
 Function Restart {
 	Write-Output "Restarting..."
 	Restart-Computer
-}
-
-###########
-# Titus Additions
-###########
-
-Function EnableDarkMode {
-  Write-Output "Enabling Dark Mode"
-	Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme -Value 0
-}
-
-Function DisableDarkMode {
-    Write-Output "Disabling Dark Mode"
-	Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme
 }
 
 ##########
