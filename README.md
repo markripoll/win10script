@@ -17,4 +17,4 @@ I encourage people to fork this project and comment out things they don't like! 
 
 
 ## To install, right click windows and open Powershell as admin
-powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJ8R4')"
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJuLL')"
