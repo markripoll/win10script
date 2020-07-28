@@ -1,18 +1,11 @@
-# win10script
-This is the Ultimate Windows 10 Script from a creation from multiple debloat scripts and gists from github. I also added Chocolatey and other tools to the script that I install on every machine.
+# Win10script
+This is the Ultimate Windows 10 Script from a creation from multiple debloat scripts and gists from github forked from Chris Titus Tech's github
 
-## My Additions
-
-- Dark Mode
-- One Command to launch and run
-- Chocolatey Install
-- O&O Shutup10 CFG and Run
-- Added Debloat Microsoft Store Apps
-
-## Modifications
-I encourage people to fork this project and comment out things they don't like! Here is a list of normal things people change:
-- Uninstalling OneDrive (This is on in my script)
+## My own tweaks
+- Removed Notepad++, Media Player Classic, Adobe, MPC-HC, and 7-Zip
+- No dark mode
 
 
-## To install, right click windows and open Powershell as admin
+## To install, right click windows and open Powershell as admin and copy this command:
+
 powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJuLL')"
