@@ -9,7 +9,6 @@ $tweaks = @(
 	"InstalFirefox",
 	"InstalVLC",
 	"Instal7zip",
-	"InstalMalwarebytes",
 	"InstalCcleaner",
 	"Instal Sumatrapdf",
 	"InstalAtom",
@@ -188,10 +187,6 @@ Function InstallTitusProgs {
 Function InstalFirefox {
 	Write-Output "Installing Firefox browser"
 	choco install firefox --params "/NoTaskbarShortcut"
-}
-Function InstalMalwarebytes {
-	Write-Output "Installing Malware Bytes"
-	choco install malwarebytes"
 }
 Function Instal7zip {
 	Write-Output "Installing 7zip"
