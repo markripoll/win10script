@@ -2240,9 +2240,9 @@ Function AddFaxPrinter {
 }
 
 Function MarkUninstall {
-    Write-Output "Uninstalling pre-installed bloatware..."
-    Get-AppxPackage -allusers Microsoft.BingWeather* | Remove-AppxPackage
-	Get-AppxPackage -allusers Microsoft.GetHelp* | Remove-AppxPackage
+    	Write-Output "Uninstalling pre-installed bloatware..."
+    	Get-AppxPackage -allusers Microsoft.BingWeather* | Remove-AppxPackage
+ 	Get-AppxPackage -allusers Microsoft.GetHelp* | Remove-AppxPackage
 	Get-AppxPackage -allusers Microsoft.Microsoft3DViewer* | Remove-AppxPackage
 	Get-AppxPackage -allusers Microsoft.MicrosoftOfficeHub* | Remove-AppxPackage
 	Get-AppxPackage -allusers Microsoft.MicrosoftSolitaireCollection* | Remove-AppxPackage
