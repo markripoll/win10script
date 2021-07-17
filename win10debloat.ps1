@@ -2324,7 +2324,7 @@ Function MarkUninstall {
 	Get-AppxPackage -allusers Microsoft.YourPhone* | Remove-AppxPackage
 	Get-AppxPackage -allusers Microsoft.ZuneMusic* | Remove-AppxPackage
 	Get-AppxPackage -allusers Microsoft.ZuneVideo* | Remove-AppxPackage
-
+}
 ##########
 # Server specific Tweaks
 ##########
